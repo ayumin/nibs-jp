@@ -1,4 +1,4 @@
-<ion-view title="Help" hide-back-button="true">
+<ion-view title="お問合せ" hide-back-button="true">
 
     <ion-nav-buttons side="left">
         <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
@@ -7,14 +7,14 @@
     <ion-content has-header="true" padding="true">
         <div class="list list-inset">
 
-            <p>How can we help you?</p>
+            <p>お問合せ</p>
 
             <div class="item item-body">
                 <textarea placeholder="Description" ng-model="case.description" rows="10"></textarea>
             </div>
 
             <button class="button button-block button-light" ng-click="submit()">
-                Submit
+                送信
             </button>
 
             <p><strong>{{status}}</strong></p>
