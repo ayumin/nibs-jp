@@ -56,7 +56,7 @@ angular.module('nibs.store-locator', [])
 
         setTimeout(function () {
             // create a map in the "map" div, set the view to a given place and zoom
-            map = L.map('map', {zoomControl: false}).setView([37.7958340, -122.3940350], 14);
+            map = L.map('map', {zoomControl: false}).setView([35.681382, 139.766084], 14);
 
             L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
                 {detectRetina: true,

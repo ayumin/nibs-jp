@@ -5,7 +5,7 @@ var bcrypt = require('bcrypt'),
     Q = require('q'),
     validator = require('validator'),
     winston = require('winston'),
-    invalidCredentials = 'Invalid email or password';
+    invalidCredentials = 'メールアドレスかパスワードが間違っています';
 
 /**
  * Encrypt password with per-user salt

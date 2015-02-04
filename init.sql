@@ -99,15 +99,21 @@ INSERT INTO salesforce.campaign (id, name, description, image__c, type, status) 
 
 INSERT INTO salesforce.product2 (id, name, description, image__c) VALUES
     (1, 'キャラメルアーモンド', 'Addictive treats from the popular new boutique chocolatier in San Francisco''s Mission District.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/feve1.jpg'),
-    (2, 'Chocolate Stout', 'For the chocolate tilted beer lover, as chocolate stout that is sure to refresh.', 'https://s3-us-west-2.amazonaws.com/sfdc-nibs-demo/chocolate_camarao.jpg'),
-    (3, 'Dandelion Assortment', 'Bring the flavor of San Francisco boutique chocolate into your home, or present as a gift to the foodie in your life.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/dandelion2.jpg'),
-    (4, 'Dandelion Small Batch', 'Experience the buzz around San Francisco''s newest boutique chocolatier. These beans are slow roasted whole for unparalleled flavor depth.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/dandelion1.jpg'),
-    (5, 'Matzo Crunch', 'A uniquely crunchy treat. So good we had to offer it all year round.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/matzo.jpg'),
-    (6, 'Patric IN-NIB-ITABLE', 'For the Nibs lovers in your life: a bar of 72% cacao, dark, sweet and strewn with crunchy nibs.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/patric2.jpg'),
-    (7, 'Patric Limited Edition', 'Salt and chocolate meet in a single bar. For sophisticated palettes.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/patric3.jpg'),
-    (8, 'Patric Mizzou Crunch', 'Some love smooth, some love crunch. This is a crunch! Lively on the palette.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/patric1.jpg');
+    (2, 'チョコレートスタウト', 'For the chocolate tilted beer lover, as chocolate stout that is sure to refresh.', 'https://s3-us-west-2.amazonaws.com/sfdc-nibs-demo/chocolate_camarao.jpg'),
+    (3, 'ダンデライオン詰合せ', 'Bring the flavor of San Francisco boutique chocolate into your home, or present as a gift to the foodie in your life.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/dandelion2.jpg'),
+    (4, 'ダンデライオンの小袋', 'Experience the buzz around San Francisco''s newest boutique chocolatier. These beans are slow roasted whole for unparalleled flavor depth.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/dandelion1.jpg'),
+    (5, 'マッツォクランチ', 'A uniquely crunchy treat. So good we had to offer it all year round.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/matzo.jpg'),
+    (6, 'パトリック IN-NIB-ITABLE', 'For the Nibs lovers in your life: a bar of 72% cacao, dark, sweet and strewn with crunchy nibs.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/patric2.jpg'),
+    (7, 'パトリック限定版', 'Salt and chocolate meet in a single bar. For sophisticated palettes.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/patric3.jpg'),
+    (8, 'パトリック・ミッツ・オー・クランチ', 'Some love smooth, some love crunch. This is a crunch! Lively on the palette.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/patric1.jpg');
 
 INSERT INTO salesforce.store__c (id, name, location__latitude__s, location__longitude__s) VALUES
+    (1, '目黒雅叙園店', 35.683013, 139.683064),
+    (2, '虎ノ門ヒルズ店', 35.666868, 139.749562),
+    (3, '丸の内KITTE店', 35.6798, 139.764877),
+    (4, '大阪梅田店', 34.698401, 135.492705);
+/*
     (1, 'マーキス', 37.785143, -122.403405),
     (2, 'ヒルトン', 37.786164, -122.410137),
     (3, 'ハイアット', 37.794157, -122.396311)
+*/

@@ -1,7 +1,7 @@
 <ion-view title="個人情報の設定" class="card-bg">
 
     <ion-nav-buttons side="right">
-        <button class="button button-clear" ng-click="update()">Save</button>
+        <button class="button button-clear" ng-click="update()">保存</button>
     </ion-nav-buttons>
 
     <ion-content has-header="true" has-padding="true">
@@ -27,12 +27,12 @@
                     <input type="text" ng-model="user.email" ng-readonly="true"/>
                 </label>
                 <label class="item item-input">
-                    <span class="input-label">名</span>
-                    <input type="text" ng-model="user.firstname" />
-                </label>
-                <label class="item item-input">
                     <span class="input-label">姓</span>
                     <input type="text" ng-model="user.lastname" />
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">名</span>
+                    <input type="text" ng-model="user.firstname" />
                 </label>
                 <label class="item item-input">
                     <span class="input-label">電話番号</span>

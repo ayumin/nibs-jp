@@ -12,7 +12,7 @@
         <div ng-if="user.id">
             <div class="header status{{user.status}}-bg">
                 <img class="avatar" ng-src="{{user.pictureurl || 'img/avatar.jpg'}}" ng-click="popupDialog()"/>
-                <h2>{{user.firstname}} {{user.lastname}}</h2>
+                <h2>{{user.lastname}} {{user.firstname}}</h2>
                 <h3>Member since {{user.createddate | date:'longDate'}}</h3>
             </div>
 
@@ -20,7 +20,7 @@
 
                 <div class="profile-status">
                     <div>
-                        <div class="profile-level">{{statusLabel}} Member</div>
+                        <div class="profile-level">{{statusLabel}} メンバー</div>
                         <div class="profile-points"><img ng-src="css/img/icon-points{{user.status}}.svg" style="height: 1.2rem;width: 1.2rem;"/> {{user.points || 0}} Nibs</div>
                         <p>{{statusDescription}}</p>
                     </div>
