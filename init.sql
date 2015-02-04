@@ -98,7 +98,7 @@ INSERT INTO salesforce.campaign (id, name, description, image__c, type, status) 
     (8, 'Nuts about nuts: 30% off mixed chocolate covered nuts', 'Are you nuts for nuts?', 'http://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/nuts.jpg', 'Offer', 'In Progress');
 
 INSERT INTO salesforce.product2 (id, name, description, image__c) VALUES
-    (1, 'Caramelized Almonds', 'Addictive treats from the popular new boutique chocolatier in San Francisco''s Mission District.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/feve1.jpg'),
+    (1, 'キャラメルアーモンド', 'Addictive treats from the popular new boutique chocolatier in San Francisco''s Mission District.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/feve1.jpg'),
     (2, 'Chocolate Stout', 'For the chocolate tilted beer lover, as chocolate stout that is sure to refresh.', 'https://s3-us-west-2.amazonaws.com/sfdc-nibs-demo/chocolate_camarao.jpg'),
     (3, 'Dandelion Assortment', 'Bring the flavor of San Francisco boutique chocolate into your home, or present as a gift to the foodie in your life.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/dandelion2.jpg'),
     (4, 'Dandelion Small Batch', 'Experience the buzz around San Francisco''s newest boutique chocolatier. These beans are slow roasted whole for unparalleled flavor depth.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/dandelion1.jpg'),
@@ -108,6 +108,6 @@ INSERT INTO salesforce.product2 (id, name, description, image__c) VALUES
     (8, 'Patric Mizzou Crunch', 'Some love smooth, some love crunch. This is a crunch! Lively on the palette.', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/patric1.jpg');
 
 INSERT INTO salesforce.store__c (id, name, location__latitude__s, location__longitude__s) VALUES
-    (1, 'Marquis', 37.785143, -122.403405),
-    (2, 'Hilton', 37.786164, -122.410137),
-    (3, 'Hyatt', 37.794157, -122.396311)
+    (1, 'マーキス', 37.785143, -122.403405),
+    (2, 'ヒルトン', 37.786164, -122.410137),
+    (3, 'ハイアット', 37.794157, -122.396311)
