@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS salesforce.store__c (
   );
 
 INSERT INTO salesforce.campaign (id, name, description, image__c, type, status) VALUES
-    (1, 'チョコレートスタウトが1000円オフ！', '超おすすめのチョコレートスタウトを1000円オフでお試しください', 'https://sfdcj-demo.s3-ap-northeast-1.amazonaws.com/nibs/chocolate_camarao.jpeg', 'Offer', 'In Progress'),
+    (1, 'チョコレートスタウトが1,000円オフ！', '超おすすめのチョコレートスタウトを1000円オフでお試しください', 'https://sfdcj-demo.s3-ap-northeast-1.amazonaws.com/nibs/chocolate_camarao.jpeg', 'Offer', 'In Progress'),
     (2, '２回目のご注文は10%オフ', '２回目はさらにお得！', 'https://sfdcj-demo.s3-ap-northeast-1.amazonaws.com/nibs/truffles.jpg', 'Offer', 'In Progress'),
     (3, '10% off EcoChocolate: Fair Trade and Organic Chocolates', '0% off chocolate that makes you feel as good as they tastes! Fair Trade and Organic chocolates assortment...', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/ritual2.jpg', 'Offer', 'In Progress'),
     (4, '２個お買い上げで１個無料！ダンデライオンBuy 2 Get 1 Free: Dandelion Chocolate for Connoisseurs', 'Purists, Foodies and Afficionados: Buy 2 Bars Get 1 Free', 'https://s3-us-west-1.amazonaws.com/sfdc-demo/nibs/Purists+Campaign+.png', 'Offer', 'In Progress'),
