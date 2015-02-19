@@ -1,5 +1,8 @@
 {
     "name": "Nibs",
     "description": "Customer loyalty application",
+    "env": {
+      "BUILDPACK_URL": "https://github.com/SalesforceDevelopersJapan/heroku-buildpack-nodejs.git"
+    },
     "addons": ["heroku-postgresql:hobby-dev"]
 }
