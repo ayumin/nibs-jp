@@ -20,9 +20,9 @@ module.exports = {
 
     // Used for picture upload (user profile and gallery)
     s3: {
-        bucket: process.env.S3_BUCKET_NAME,
-        awsKey: process.env.AWS_KEY,
-        secret: process.env.AWS_SECRET
+        bucket: process.env.S3_BUCKET_NAME || process.env.PLANTER_BUCKET_NAME,
+        awsKey: process.env.AWS_KEY || process.env.PLANTER_S3_ACCESS_KEY_ID,
+        secret: process.env.AWS_SECRET || process.env.PLANTER_S3_SECRET_ACCESS_KEY
     }
 
 };
