@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS picture (
   );
 
 
-
+/*
 CREATE SCHEMA IF NOT EXISTS salesforce;
 
 CREATE TABLE IF NOT EXISTS salesforce.contact (
@@ -112,6 +112,7 @@ INSERT INTO salesforce.store__c (id, name, location__latitude__s, location__long
     (2, '虎ノ門ヒルズ店', 35.666868, 139.749562),
     (3, '丸の内KITTE店', 35.6798, 139.764877),
     (4, '大阪梅田店', 34.698401, 135.492705);
+*/
 /*
     (1, 'マーキス', 37.785143, -122.403405),
     (2, 'ヒルトン', 37.786164, -122.410137),
