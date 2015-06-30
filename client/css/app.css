@@ -251,22 +251,22 @@ a {
 }
 
 .bar-status {
-    border-color: #73732E;
-    background-color: #73732E;
+    border-color: #66ccff;
+    background-color: #66ccff;
     background-image: none;
     color: #fff;
 }
 
 .bar-status1 {
-    border-color: #73732E;
-    background-color: #73732E;
+    border-color: #0099ff;
+    background-color: #0099ff;
     background-image: none;
     color: #fff;
 }
 
 .bar-status2 {
-    border-color: #A87E21;
-    background-color: #A87E21;
+    border-color: #003366;
+    background-color: #003366;
     background-image: none;
     color: #fff;
 }
@@ -387,15 +387,15 @@ a {
 }
 
 .status1-bg {
-    background: #73732E;
+    background: #66ccff;
 }
 
 .status2-bg {
-    background: #A87E21;
+    background: #0099ff;
 }
 
 .status3-bg {
-    background: #802E13;
+    background: #003366;
 }
 
 .status1 {
