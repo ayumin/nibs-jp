@@ -20,7 +20,7 @@
                 </button>
 
             </div>
-        </div> 
+        </div>
         -->
 
         <div ng-repeat="offer in offers" class="list card">
@@ -28,7 +28,7 @@
                 <div class="item">
                     <h2>{{offer.name}}</h2>
 
-                    <p>Expires on {{offer.enddate | date:'EEEE, MMMM d y'}}</p>
+                    <p>{{offer.enddate | date:'yyyy/MM/dd HH:mm'}}まで有効</p>
                 </div>
                 <div class="item item-body">
                     <img ng-if="offer.image" ng-src="{{offer.image}}">

@@ -50,7 +50,7 @@ function createAccessToken(user) {
     winston.info('createAccessToken');
     var token = uuid.v4(),
         deferred = Q.defer();
-    
+
     db.query('INSERT INTO tokens (userId, externalUserId, token) VALUES ($1, $2, $3)', [user.id, user.externaluserid, token])
         .then(function() {
             deferred.resolve(token);
@@ -93,7 +93,7 @@ function login(req, res, next) {
                             return res.send({'user':{'email': user.email, 'firstName': user.firstname, 'lastName': user.lastname}, 'token': token});
                         })
                         .catch(function(err) {
-                            return next(err);    
+                            return next(err);
                         });
                 } else {
                     // Passwords don't match
@@ -116,7 +116,7 @@ function logout(req, res, next) {
     winston.info('Logout token:' + token);
     db.query('DELETE FROM tokens WHERE token = $1', [token])
         .then(function () {
-            winston.info('Logout successful');
+            winston.info('ログアウトが成功しました');
             res.send('OK');
         })
         .catch(next);
