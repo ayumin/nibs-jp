@@ -100,7 +100,7 @@ angular.module('nibs.auth', ['openfb', 'nibs.config'])
             signup: function (user) {
                 return $http.post($rootScope.server.url + '/signup', user);
             }
-        }
+        };
     })
 
     /*
@@ -134,7 +134,7 @@ angular.module('nibs.auth', ['openfb', 'nibs.config'])
                     $state.go("app.profile");
                 })
                 .error(function (err) {
-                    $ionicPopup.alert({title: 'Oops', content: err});
+                    $ionicPopup.alert({title: '実行できません', content: err});
                 });
         };
 
@@ -153,15 +153,15 @@ angular.module('nibs.auth', ['openfb', 'nibs.config'])
                                 })
                                 .error(function (err) {
                                     console.log(JSON.stringify(err));
-                                    $ionicPopup.alert({title: 'Oops', content: err});
+                                    $ionicPopup.alert({title: '実行できません', content: err});
                                 })
                         })
                         .error(function () {
-                            $ionicPopup.alert({title: 'Oops', content: "The Facebook login failed"});
+                            $ionicPopup.alert({title: '実行できません', content: "The Facebook login failed"});
                         });
                 },
                 function () {
-                    $ionicPopup.alert({title: 'Oops', content: "The Facebook login failed"});
+                    $ionicPopup.alert({title: '実行できません', content: "The Facebook login failed"});
                 });
         };
 
@@ -181,7 +181,7 @@ angular.module('nibs.auth', ['openfb', 'nibs.config'])
 
         $scope.signup = function () {
             if ($scope.user.password !== $scope.user.password2) {
-                $ionicPopup.alert({title: 'Oops', content: "passwords don't match"});
+                $ionicPopup.alert({title: '実行できません', content: "passwords don't match"});
                 return;
             }
             Auth.signup($scope.user)
@@ -204,15 +204,15 @@ angular.module('nibs.auth', ['openfb', 'nibs.config'])
                                     });
                                 })
                                 .error(function (err) {
-                                    $ionicPopup.alert({title: 'Oops', content: err});
-                                })
+                                    $ionicPopup.alert({title: '実行できません', content: err});
+                                });
                         })
                         .error(function () {
-                            $ionicPopup.alert({title: 'Oops', content: "The Facebook login failed"});
+                            $ionicPopup.alert({title: '実行できません', content: "The Facebook login failed"});
                         });
                 },
                 function () {
-                    $ionicPopup.alert({title: 'Oops', content: "The Facebook login failed"});
+                    $ionicPopup.alert({title: '実行できません', content: "The Facebook login failed"});
                 });
         };
 

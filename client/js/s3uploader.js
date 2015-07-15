@@ -37,7 +37,7 @@ angular.module('nibs.s3uploader', [])
                             deferred.resolve(e);
                         },
                         function (e) {
-                            $ionicPopup.alert({title: 'Oops', content: 'The image upload failed'});
+                            $ionicPopup.alert({title: '実行できません', content: 'The image upload failed'});
                             deferred.reject(e);
                         }, options);
 

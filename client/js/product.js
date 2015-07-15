@@ -60,24 +60,24 @@ angular.module('nibs.product', ['openfb', 'nibs.status', 'nibs.activity', 'nibs.
         });
 
         $scope.shareOnFacebook = function () {
-            Status.show('Shared on Facebook!');
-            Activity.create({type: "Shared on Facebook", points: 1000, productId: $scope.product.sfid, name: $scope.product.name, image: $scope.product.image})
+            Status.show('Facebookでシェアしました!');
+            Activity.create({type: "Facebookでシェア", points: 1000, productId: $scope.product.sfid, name: $scope.product.name, image: $scope.product.image})
                 .success(function(status) {
                     Status.checkStatus(status);
                 });
         };
 
         $scope.shareOnTwitter = function () {
-            Status.show('Shared on Twitter!');
-            Activity.create({type: "Shared on Twitter", points: 1000, productId: $scope.product.sfid, name: $scope.product.name, image: $scope.product.image})
+            Status.show('Twitterでツイートしました!');
+            Activity.create({type: "Twitterでツイート", points: 1000, productId: $scope.product.sfid, name: $scope.product.name, image: $scope.product.image})
                 .success(function(status) {
                     Status.checkStatus(status);
                 });
         };
 
         $scope.shareOnGoogle = function () {
-            Status.show('Shared on Google+!');
-            Activity.create({type: "Shared on Google+", points: 1000, productId: $scope.product.sfid, name: $scope.product.name, image: $scope.product.image})
+            Status.show('Google+で共有しました!');
+            Activity.create({type: "Google+で共有", points: 1000, productId: $scope.product.sfid, name: $scope.product.name, image: $scope.product.image})
                 .success(function(status) {
                     Status.checkStatus(status);
                 });
@@ -85,8 +85,8 @@ angular.module('nibs.product', ['openfb', 'nibs.status', 'nibs.activity', 'nibs.
 
         $scope.saveToWishList = function () {
             WishListItem.create({productId: $scope.product.id}).success(function(status) {
-                Status.show('Added to your wish list!');
-                Activity.create({type: "Added to Wish List", points: 1000, productId: $scope.product.sfid, name: $scope.product.name, image: $scope.product.image})
+                Status.show('ウィッシュリストに登録されました!');
+                Activity.create({type: "ウィッシュリストに登録", points: 1000, productId: $scope.product.sfid, name: $scope.product.name, image: $scope.product.image})
                     .success(function(status) {
                         Status.checkStatus(status);
                     });

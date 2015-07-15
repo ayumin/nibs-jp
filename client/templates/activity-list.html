@@ -7,7 +7,7 @@
     <ion-content>
 
         <ion-refresher
-                pulling-text="Pull to refresh..."
+                pulling-text="下に引っ張り再読み込み..."
                 on-refresh="doRefresh()">
         </ion-refresher>
 
@@ -22,6 +22,6 @@
 
     </ion-content>
 
-    <p ng-if="!loading && activities.length === 0" class="centered-message">You have no recent activity</p>
+    <p ng-if="!loading && activities.length === 0" class="centered-message">履歴がありません</p>
 
 </ion-view>
